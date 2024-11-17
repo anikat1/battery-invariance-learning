@@ -1,28 +1,28 @@
 # Battery Safety Invariance Learning
 - Please extract data.zip for original datasets
 ## dependencies
-#   - tensorboard==2.12.0
-#   - torch==1.13.1
-#   - torch-tb-profiler==0.4.1
-#   - torchmetrics==0.11.3
-#   - torchvision==0.14.1 
+   - tensorboard==2.12.0
+   - torch==1.13.1
+   - torch-tb-profiler==0.4.1
+   - torchmetrics==0.11.3
+   - torchvision==0.14.1 
 
 ## we uploaded a sample dataset here as file limit was exceeding
 ## train the invariance model
-# 1. epochs: #outer iterations
-# 2. epochs_inv: iterations to run invariant models
-# 3. epochs_reg: iterations to run predictor
-# 4. num_class: number of material class (we used 3, one to test on unseen)
-# 5. list_mat_inv: list of material pairs to train f_psi_mat
-# 6. list_soc_inv: list of soc pairs to train f_psi_soc
-# 7. dir_tbs: tensor board directory
-# 8. dir_out: save model output directory
-# 9. dir_data: data directory
-# 10: dim_val: regressor hidden layer size
-# 11. num_layers: lstm layer size
-# 12. learning_rate: regressor learning rate
-# 13. regressor batch_size
-# 14: lr_g, lr_d: learning rate for invariant and adversaril models
+ - epochs: #outer iterations
+ - epochs_inv: iterations to run invariant models
+ - epochs_reg: iterations to run predictor
+ - num_class: number of material class (we used 3, one to test on unseen)
+ - list_mat_inv: list of material pairs to train f_psi_mat
+ - list_soc_inv: list of soc pairs to train f_psi_soc
+ - dir_tbs: tensor board directory
+ - dir_out: save model output directory
+ - dir_data: data directory
+ - dim_val: regressor hidden layer size
+ - num_layers: lstm layer size
+ - learning_rate: regressor learning rate
+ - regressor batch_size
+ - lr_g, lr_d: learning rate for invariant and adversaril models
 
 ## Training
 ```
