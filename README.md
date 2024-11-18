@@ -7,7 +7,6 @@
    - torchmetrics==0.11.3
    - torchvision==0.14.1 
 
-## we uploaded a sample dataset here as file limit was exceeding
 ## train the invariance model
  - epochs: #outer iterations
  - epochs_inv: iterations to run invariant models
